@@ -1,0 +1,5 @@
+Transaction Detail
+-------------------------------------------
+"Account Number: Rah1340707640            Transaction Type: DEPOSIT            Transaction Amount: 100.0            Account balance : 100.0            Transaction Date: 2022-09-15 09:56:58.145073+00:00            
+Account Number: Rah1340707640            Transaction Type: DEPOSIT            Transaction Amount: 100.0            Account balance : 200.0            Transaction Date: 2022-09-15 09:58:02.392434+00:00            
+Account Number: Rah1340707640            Transaction Type: DEPOSIT            Transaction Amount: 50.0            Account balance : 250.0            Transaction Date: 2022-09-15 09:58:11.541391+00:00            

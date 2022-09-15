@@ -1,0 +1,6 @@
+Customer Detail
+-------------------------------------------
+        Customer Name: Diptendu
+        Pan Number : CSYG067966377
+        Aadhar Number : 37388893
+        Address : 32, Camac Street

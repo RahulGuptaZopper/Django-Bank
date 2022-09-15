@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Accounts</title>
+
+</head>
+<body>
+    <h1>Account Details</h1>
+    <ul>
+        <li>Account Bank = {{ account.bank }} | Account Client = {{ account.client.name }} | Account Number = {{ account.number }} </li>
+        <li>Account Opening = {{account.open_date}} | Account Balance = {{account.deposit}} </li>
+        <li>Credit Card = {{account.credit_card}} | Debit Card = {{account.debit_card}} </li>
+        {% if account.account_type == 's' %}
+        <li>Account Type = Savings</li>
+        {% else %}
+        <li> Account Type = Current </li>
+        {% endif %}
+        <li><a href ="http://127.0.0.1:8000/api/update_account/">Update</a>
+            <br>
+            <li><a href ="http://127.0.0.1:8000/api/transactions/">Transaction</a>
+            <li> <a href = "http://127.0.0.1:8000/api/download_account/">Download Account Statement</a> </li>
+            <li> <a href = "http://127.0.0.1:8000/api/transfers/">Transfer To another Account</a> </li>
+            <li><a href="http://127.0.0.1:8000/api/download_transactions/">Download Transactions</a></li>
+            <li><a href="http://127.0.0.1:8000/api/download_transfers/">Download Transfers</a></li>
+            <br>
+    </ul>
+    <a href= "http://127.0.0.1:8000/"> Home </a>
+</body>
+</html>

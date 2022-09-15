@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Clients</title>
+
+</head>
+<body>
+    <h1>Client Details</h1>
+    <ul>
+        <li>Client name = {{ client.name }} | Client address = {{ client.address }} </li>
+        <li>Client Pan Card = {{client.pan_card}} | Client Aadhar = {{client.aadhar_card}} </li>
+        <li> <a href = "http://127.0.0.1:8000/api/update_client/">Update</a> </li>
+        <li> <a href = "http://127.0.0.1:8000/api/download_client/">Download Statement</a> </li>
+        <li> <a href = "http://127.0.0.1:8000/api/accounts/">Account</a> </li>
+    </ul>
+
+    <a href= "http://127.0.0.1:8000/"> Home </a>
+</body>
+</html>

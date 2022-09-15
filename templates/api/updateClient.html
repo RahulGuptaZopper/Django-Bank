@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Client</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+<h1>Update Client</h1>
+<form method="post">
+    {% csrf_token %}
+    <fieldset>
+        {% if error_message %}
+        <p><strong>
+            {{ error_message }}
+        </strong></p>
+        {% endif %}
+        <div class="form-group"> Current Client Name {{client.name}}
+            {{form.name}}
+        </div>
+        <div class="form-group"> Current Address {{client.address}}
+            {{form.address}}
+        </div>
+        <div class="form-group"> Current Pan Card {{client.pan_card}}
+            {{form.pan_card}}
+        </div>
+        <div class="form-group"> Current Aadhar card {{client.aadhar_card}}
+            {{form.aadhar_card}}
+        </div>
+    </fieldset>
+    <input type="submit" value = "Update">
+</fieldset>
+</form>
+</body>
+</html>
