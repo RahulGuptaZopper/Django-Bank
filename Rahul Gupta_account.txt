@@ -1,0 +1,10 @@
+Account Detail
+-------------------------------------------
+        Account Holder: Rahul Gupta
+        Account Number: Rah1340707640
+        Account Type: s
+        Account Bank: State Bank of India
+        Account Opening: 2022-09-15 09:56:58.141411+00:00
+        Account Balance : 100
+        Credit Card : 1650292936
+        Debit Card : 4823042927

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transfers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+<h1>Transfers</h1>
+<form method="post">
+    {% csrf_token %}
+    <fieldset>
+
+        <fieldset>
+            {% if error_message %}
+            <p><strong>
+                {{ error_message }}
+            </strong></p>
+            {% endif %}
+            <div class="form-group">Reciever
+                {{form.to_account}}
+            </div>
+            <div class="form-group">Amount
+                {{form.amount}}
+            </div>
+
+    </fieldset>
+    <input type="submit" value = "Submit">
+</form>
+</body>
+</html>
